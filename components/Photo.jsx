@@ -21,7 +21,7 @@ const Photo = () => {
                         opacity: 1,
                         transition: { delay: 2.4, duration: 0.8, ease: 'easeInOut' },
                     }}
-                    className="w-[200px] h-[200px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
+                    className="w-[200px] h-[200px] xl:w-[498px] xl:h-[498px] dark:mix-blend-lighten mix-blend-darken absolute"
                 >
                     <Image src={photo} priority quality={100} fill alt="" className="object-contain rotate-2" />
                 </motion.div>

@@ -14,7 +14,8 @@ module.exports = {
       padding: "15px",
     },
     screens: {
-      sm: "640px",
+      smm: "0px",
+      sm: "360px",
       md: "768px",
       lg: "1024px",
       xl: "1280px",
@@ -31,6 +32,11 @@ module.exports = {
         accent: {
           DEFAULT: "#daa520",
           hover: "#b8860b",
+        },
+        primaryLight: '#FFFDB5',
+        accentLight: {
+          DEFAULT: "#387F39",
+          hover: "#A2CA71",
         },
         secondary : {
           DEFAULT: "#2C5F2D",
