@@ -6,7 +6,7 @@ import { SiTailwindcss, SiNextdotjs, SiFirebase } from "react-icons/si";
 //about data
 const about = {
   title: "About Me",
-  description: "Hello, I am Gaurav, a passionate software developer. I have a strong foundation in HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS. I am also proficient in Node.js, Firebase, and Tailwind CSS. I am currently looking for a intern role in the tech industry.",
+  description: "Hello, I am Gaurav, a passionate FullStack developer. I have a strong foundation in HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS. I am also proficient in Node.js, Firebase, and Tailwind CSS. I am currently looking for a intern role in the tech industry.",
   info: [
     {
       fieldName: "Name",

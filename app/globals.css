@@ -5,6 +5,33 @@
 .text-outline {
   -webkit-text-stroke: 2px white;
 }
+.text-outline-black {
+  -webkit-text-stroke: 2px black;
+}
+
+html, body {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px; 
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #5DADE2, #2E86C1); 
+    border-radius: 10px; 
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #3299CC, #1B6CA8); 
+  }
+}
 
 @layer base {
   body {

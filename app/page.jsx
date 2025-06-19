@@ -17,7 +17,7 @@ const Home = () => {
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">FullStack Developer</span>
             <h1 className="h2 mb-2 xl:h1 xl:mb-6">Hello I'm <br/> <span className="dark:text-accent text-accentLight">Gaurav Bhakuni</span></h1>
             <p className="max-w-[500px] mb-9 fade-in opacity-80">I am a passionate fullstack web developer and I am proficient in various programming languages and technologies.</p>
 
