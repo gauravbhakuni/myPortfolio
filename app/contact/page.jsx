@@ -25,7 +25,7 @@ const info = [
   {
     icon: <FaMapMarkedAlt />,
     title: "Address",
-    description: "Jwalpa Enclave Mohkampur khurd, Dehradun",
+    description: "Dehradun",
   },
 ];
 

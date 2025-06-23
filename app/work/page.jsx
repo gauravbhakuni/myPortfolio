@@ -12,25 +12,35 @@ const projects = [
     description: "Frontend website",
     stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "JavaScript" }],
     image: "/assets/work/photography_website.png",
-    live: "",
+    live: "https://photography-website-murex.vercel.app/",
   },
   {
     num: "02",
     category: "FullStack",
     title: "Nike Shoe Store",
     description: "Ecommerce website for Shoe Sales",
-    stack: [{ name: "Next.js" }, { name: "TailwindCSS" }, { name: "Sanity CMS" }],
+    stack: [
+      { name: "Next.js" },
+      { name: "TailwindCSS" },
+      { name: "Sanity CMS" },
+    ],
     image: "/assets/work/nike_Page.png",
-    live: "",
+    live: "https://github.com/gauravbhakuni/website",
   },
   {
     num: "03",
     category: "FullStack",
-    title: "Fullstack Website",
-    description: "Fullstack Website",
-    stack: [{ name: "Next.js" }, { name: "TailwindCSS" }, { name: "Node.js" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
+    title: "MacSimulator",
+    description:
+      "A fullstack desktop-style web interface that mimics macOS, featuring draggable app windows, a live Spotify player using the Web API and a Launchpad.",
+    stack: [
+      { name: "Vite" },
+      { name: "React.js" },
+      { name: "TailwindCSS" },
+      { name: "Zustand" },
+    ],
+    image: "/assets/work/macSimulator.png",
+    live: "https://macsimulator.netlify.app/",
   },
 ];
 
@@ -74,7 +84,8 @@ const Work = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{
-        opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' },
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
       className="relative px-4 py-10 md:px-6 md:py-14 lg:py-16"
       onMouseMove={handleMouseMove}
@@ -99,6 +110,8 @@ const Work = () => {
                 className="flex flex-col justify-between border-t dark:border-t-white border-t-black py-10 dark:text-white text-black md:flex-row"
                 aria-label={p.title}
                 href={p.live || "#"}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div className="flex flex-col">
                   <span className="text-3xl font-bold">{p.title}</span>
@@ -108,9 +121,7 @@ const Work = () => {
                     ))}
                   </div>
                 </div>
-                <span
-                  className="ml-auto flex items-center gap-2 text-base font-medium md:ml-0 md:text-lg lg:text-xl hover:text-blue-500 transition duration-300"
-                >
+                <span className="ml-auto flex items-center gap-2 text-base font-medium md:ml-0 md:text-lg lg:text-xl hover:text-blue-500 transition duration-300">
                   View Project
                   <svg
                     stroke="currentColor"
@@ -135,15 +146,15 @@ const Work = () => {
         <div
           ref={revealRef}
           className={`absolute top-0 left-0 pointer-events-none opacity-0 visibility-hidden 
-             w-64 h-52 bg-cover bg-center rounded-lg ${hovering ? 'shadow-lg' : ''}`}
+             w-64 h-52 bg-contain bg-no-repeat bg-center
+ rounded-lg`}
           style={{
             backgroundImage:
               currentProject !== null
                 ? `url(${projects[currentProject].image})`
                 : "",
           }}
-        >
-        </div>
+        ></div>
       </div>
     </motion.div>
   );
