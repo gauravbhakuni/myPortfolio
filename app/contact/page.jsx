@@ -84,7 +84,7 @@ const Contact = () => {
               </div>
 
               {/* select */}
-              <Select name="service" required>
+              {/* <Select name="service" required>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
@@ -96,7 +96,7 @@ const Contact = () => {
                     <SelectItem value="ui/ux design">UI/UX Design</SelectItem>
                   </SelectGroup>
                 </SelectContent>
-              </Select>
+              </Select> */}
 
               {/* textarea */}
               <Textarea
